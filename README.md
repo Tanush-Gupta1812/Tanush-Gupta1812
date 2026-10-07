@@ -25,7 +25,7 @@ I'm a developer and engineer passionate about **full-stack software**, **autonom
 ### 📫 How to Reach Me
 - ✉️ **Email**: [gupta.tanush18@gmail.com](mailto:gupta.tanush18@gmail.com)
 - 🐙 **GitHub**: [@Tanush-Gupta1812](https://github.com/Tanush-Gupta1812)
-- 💼 **LinkedIn**: [Connect on LinkedIn](https://www.linkedin.com/in/tanush-gupta) *(replace with your profile link)*
+- 💼 **LinkedIn**: [Connect on LinkedIn](https://www.linkedin.com/in/tanush-gupta-865054413)
 
 ---
 <div align="center">
