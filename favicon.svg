@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B00" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00B4FF" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.2)"/>
+      <stop offset="100%" stop-color="#00B4FF"/>
+    </linearGradient>
+    <filter id="glowOrange" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-1.5" dy="0" stdDeviation="0.8" flood-color="#00B4FF" flood-opacity="0.95"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#FF6B00" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowBlue" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="1.5" dy="0" stdDeviation="0.8" flood-color="#FF6B00" flood-opacity="0.95"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#00B4FF" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Container Squircle -->
+  <rect width="64" height="64" rx="16" fill="#08080A"/>
+  <rect width="64" height="64" rx="16" fill="url(#bgGlow)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" fill="none" stroke="url(#borderGrad)" stroke-width="1.8" opacity="0.85"/>
+
+  <!-- T: Vibrant Orange with Blue Shadow -->
+  <path d="M 10 18 H 31 V 24.5 H 24 V 46 H 17 V 24.5 H 10 Z" fill="#FF6B00" filter="url(#glowOrange)"/>
+
+  <!-- G: Electric Blue with Orange Shadow -->
+  <path d="M 49.5 25.5 L 44.5 29 C 43.2 27.2 41.5 25.8 39 25.8 C 34.5 25.8 31 29.5 31 34.5 C 31 39.5 34.5 43.2 39 43.2 C 42.5 43.2 45 41 45.4 38 H 39.5 V 32.5 H 51.5 V 38.5 C 50.8 44.5 45.5 49 39 49 C 30.5 49 24.5 42.5 24.5 34.5 C 24.5 26.5 30.5 20 39 20 C 43.5 20 47.2 22.2 49.5 25.5 Z" fill="#00B4FF" filter="url(#glowBlue)"/>
+
+  <!-- Subtle Cyber Tech Dot Accent -->
+  <circle cx="53" cy="13" r="2.2" fill="#00B4FF"/>
+  <circle cx="11" cy="51" r="2.2" fill="#FF6B00"/>
+</svg>
