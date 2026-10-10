@@ -93,6 +93,8 @@
     .kalai-feature-item strong{display:block;font-family:var(--font-mono);font-size:.78rem;color:var(--white);letter-spacing:.3px;margin-bottom:3px;}
     .kalai-feature-item p{font-size:.78rem;color:var(--muted);line-height:1.55;margin:0;}
     .kalai-status-pill{background:rgba(0,180,255,0.08);border-color:rgba(0,180,255,0.3);color:var(--blue);font-weight:500;}
+    .kalai-visit-btn{background:var(--blue-dim);border-color:var(--blue);color:var(--white);font-weight:600;transition:all .25s var(--ease-out);}
+    .kalai-visit-btn:hover{background:var(--blue);color:#08080A;box-shadow:0 0 24px var(--blue-glow);transform:translateY(-1px);}
     .status-pulse-dot{width:6px;height:6px;border-radius:50%;background:#00FF66;box-shadow:0 0 8px #00FF66;display:inline-block;margin-right:6px;animation:pulse-green 2s infinite;}
     .tag-cyan{border-color:rgba(0,229,255,.4);color:#00E5FF;background:rgba(0,229,255,.06);}
     .scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--font-mono);font-size:.65rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;z-index:2;animation:fadeUp 1s var(--ease-out) 1.5s both;}
@@ -477,6 +479,8 @@
           </div>
         </div>
         <div class="project-links">
+          <a href="https://kalor-tech.com" target="_blank" rel="noopener" class="project-link kalai-visit-btn" id="kalai-website-btn">&#8599; Visit Website</a>
+          <a href="https://github.com/Tanush-Gupta1812/Kalor-Tech" target="_blank" rel="noopener" class="project-link" id="kalai-gh-btn">&#8997; GitHub</a>
           <span class="project-link kalai-status-pill"><span class="status-pulse-dot"></span> In Active Development &middot; Private R&amp;D</span>
           <a href="#contact" class="project-link" id="kalai-contact-btn">&#8594; Discuss &amp; Inquire</a>
         </div>
@@ -718,7 +722,7 @@
   function closeMobileNav(){document.getElementById('mobileNav').classList.remove('open');document.getElementById('navOverlay').classList.remove('open');document.body.style.overflow='';}
 
   // TYPED TEXT
-  const roles=['Full-Stack Developer','Robotics Engineer','Computer Vision Dev','Flutter Developer','Builder of Things âš¡'];
+  const roles=['Full-Stack Developer','Robotics Engineer','Computer Vision Dev','Flutter Developer','Builder of Things ⚡'];
   let ri=0,ci=0,del=false;
   const tel=document.getElementById('typed-text');
   function type(){const c=roles[ri];tel.textContent=del?c.substring(0,ci--):c.substring(0,ci++);let d=del?50:90;if(!del&&ci===c.length+1){d=1800;del=true;}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=300;}setTimeout(type,d);}
